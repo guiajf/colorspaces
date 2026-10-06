@@ -1,14 +1,14 @@
 ### Espaço de cores
 
-Um *espaço* ou *modelo* de cores é o método utilizado para descrever como as cores podem ser representadas, consistente com um sistema de coordenadas tridimensional e um sub-espaço onde cada cor é representada por um ponto ou *pixel*. Diferentes *modelos* atendem a diferentes especificações de *hardware*.
+Um *espaço* ou *modelo* de cores é o método utilizado para descrever como as cores podem ser representadas, consistente com um sistema de coordenadas tridimensional e um sub-espaço onde cada cor é representada por um ponto ou *pixel*. Diferentes *modelos* atendem a diferentes especificações de *hardware*. A seguir, apresentamos as representações mais comuns no processamento de imagens, começando pelas mais intuitivas (**RGB** e **grayscale**) e avançando para modelos com propriedades específicas (**HSV**, **Lab**, **HLS** e **YCrCb**).
 
-Uma imagem **RGB** (*truecolor*) é representada por uma matriz tridimensional M x N x 3. Cada pixel da imagem possui uma cor, resultante da combinação da intensidade de cada um dos canais: **red** (vermelho), **green** (verde) e **blue** (azul).
+Uma imagem **RGB** (*truecolor*) é representada por uma matriz tridimensional M x N x 3. Cada pixel da imagem possui uma cor, resultante da combinação da intensidade de cada um dos canais: **red**, **green** e **blue**. É o modelo nativo da maioria das câmeras e telas.
 
-Uma imagem em tons de cinza (**grayscale**) é representada por uma matriz bidimensional M x N, em que cada elemento expressa a intensidade do pixel.
+Uma imagem em tons de cinza (**grayscale**) é representada por uma matriz bidimensional M x N, em que cada elemento expressa a intensidade do pixel.  Pode ser entendida como um caso particular do **RGB** em que os três canais são iguais, ou como um espaço próprio de luminância.
 
 O espaço **HSV** (*Hue, Saturation, Value*) reorganiza as informações de cor em três componentes mais intuitivos para a percepção humana: **matiz** (*hue*), que representa o tipo de cor; **saturação** (*saturation*), que indica a pureza da cor; e **valor** (*value*), que representa o brilho. É amplamente utilizado em tarefas de segmentação por cor e rastreamento de objetos, pois separa a informação de cor (matiz) da informação de luminosidade.
 
-> **Atenção (OpenCV):** embora teoricamente o matiz seja um ângulo de 0° a 360°, o OpenCV armazena esse canal em 8 bits, mapeando-o para o intervalo **[0, 179]** — ou seja, cada unidade equivale a cerca de 2 graus do círculo cromático. Já os canais **S** e **V** são representados no intervalo [0, 255]. Essa convenção difere de outras bibliotecas (como PIL, scikit-image e MATLAB), que utilizam H em [0, 360]. Portanto, ao definir limiares para segmentação no OpenCV, é preciso considerar essa escala reduzida à metade.
+> **Atenção:** embora teoricamente o matiz seja um ângulo de 0° a 360°, o OpenCV armazena esse canal em 8 bits, mapeando-o para o intervalo **[0, 179]** — ou seja, cada unidade equivale a cerca de 2 graus do círculo cromático. Já os canais **S** e **V** são representados no intervalo [0, 255]. Essa convenção difere de outras bibliotecas (como PIL, scikit-image e MATLAB), que utilizam H em [0, 360]. Portanto, ao definir limiares para segmentação no OpenCV, é preciso considerar essa escala reduzida à metade.
 
 O espaço **Lab** (ou **CIELAB**) foi projetado para ser perceptualmente uniforme, ou seja, a distância euclidiana entre duas cores nesse espaço corresponde aproximadamente à diferença percebida pelo olho humano. Seus três canais são: **L*** (luminosidade); **a*** (variação do verde ao vermelho); e **b*** (variação do azul ao amarelo). É muito utilizado em aplicações de comparação de cores e correção de iluminação.
 
