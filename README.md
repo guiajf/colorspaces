@@ -166,7 +166,7 @@ plot_canais(rgb,   ['R (vermelho)', 'G (verde)', 'B (azul)'], 'Canais do espaço
     
 
 
-### Exibir os canais separadamente como imagens em tons de cinza
+### Exibimos os canais separadamente como imagens em tons de cinza
 
 
 ```python
