@@ -1,4 +1,4 @@
-### Espaço de cores
+# Espaço de cores
 
 Um *espaço* ou *modelo* de cores é o método utilizado para descrever como as cores podem ser representadas, consistente com um sistema de coordenadas tridimensional e um sub-espaço onde cada cor é representada por um ponto ou *pixel*. Diferentes *modelos* atendem a diferentes especificações de *hardware*. A seguir, apresentamos as representações mais comuns no processamento de imagens, começando pelas mais intuitivas (**RGB** e **grayscale**) e avançando para modelos com propriedades específicas (**HSV**, **Lab**, **HLS** e **YCrCb**).
 
