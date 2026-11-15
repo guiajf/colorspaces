@@ -228,5 +228,17 @@ plot_canais(rgb,   ['R (vermelho)', 'G (verde)', 'B (azul)'], 'Canais do espaço
 
     
 ![png](output_13_4.png)
-    
 
+
+    
+**Referências**
+
+KONDEKAR, Vipul H.; BODHE, S. K. A Comprehensive Investigation of Color Models used in Image Processing. International Journal of Computer Applications, v. 180, n. 22, p. 19-24, fev. 2018. Disponível em: https://www.ijcaonline.org/archives/volume180/number22/vipul-2018-ijca-916507.pdf
+
+OpenCV: Color Conversions. Documentação oficial que detalha as fórmulas matemáticas e as faixas de valores para as conversões entre espaços de cor, incluindo a escala do matiz (H) de 0 a 179 em imagens de 8 bits. Disponível em: https://docs.opencv.org/4.x/de/d25/imgproc_color_conversions.html
+
+SANTNER, Jakob. The HSV (hue-saturation-value) color model separates intensity information from color information. TU Graz Repository, 2010. Disponível em: https://repository.tugraz.at/publications/marc21/wbf9f-scz32/files/25000_5036_santner_jakob_2010.pdf
+
+Scikit-Image: Image adjustment (Color manipulation). Explica a conversão para tons de cinza com pesos não uniformes (0.2125 R + 0.7154 G + 0.0721 B) para preservar a luminância percebida, corroborando a definição de imagem grayscale. Disponível em: https://scikit-image.org/docs/stable/user_guide/transforming_image_data.html
+
+Scikit-Learn: KMeans. Documentação oficial da classe KMeans. Ela confirma que o algoritmo pode cair em mínimos locais e explica o parâmetro n_init, que justifica a sua sugestão de rodar o algoritmo múltiplas vezes para estabilidade. Disponível em: https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html
