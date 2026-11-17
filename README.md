@@ -241,4 +241,4 @@ SANTNER, Jakob. The HSV (hue-saturation-value) color model separates intensity i
 
 Scikit-Image: Image adjustment (Color manipulation). Explica a conversão para tons de cinza com pesos não uniformes (0.2125 R + 0.7154 G + 0.0721 B) para preservar a luminância percebida, corroborando a definição de imagem grayscale. Disponível em: https://scikit-image.org/docs/stable/user_guide/transforming_image_data.html
 
-Scikit-Learn: KMeans. Documentação oficial da classe KMeans. Ela confirma que o algoritmo pode cair em mínimos locais e explica o parâmetro n_init, que justifica a sua sugestão de rodar o algoritmo múltiplas vezes para estabilidade. Disponível em: https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html
+Scikit-Learn: KMeans. Documentação oficial da classe KMeans. Ela confirma que o algoritmo pode cair em mínimos locais e explica o parâmetro n_init, que justifica a sugestão de rodar o algoritmo múltiplas vezes para estabilidade. Disponível em: https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html
